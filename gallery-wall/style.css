@@ -1,0 +1,42 @@
+div {
+    display: inline-block;
+    
+}
+img {
+    
+    width: 400px;
+    height: 400px;
+    border: 2px black solid;
+    filter: grayscale(100);
+    padding: 10px 10px 55px 10px;
+    opacity: 0.5;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+#img1 img {
+    transform: rotate(20deg);
+}
+
+#img2 img {
+    transform: rotate(30deg);
+}
+
+#img3 img {
+    transform: rotate(10deg);
+}
+
+#img4 img {
+    transform: rotate(15deg);
+}
+
+#img1:hover img,
+#img2:hover img,
+#img3:hover img,
+#img4:hover img
+{
+    transform: rotate(0deg);
+    opacity: 1;
+    filter: grayscale(0);
+}
