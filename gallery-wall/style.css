@@ -23,6 +23,10 @@ img {
     left: 10%;
 }
 
+/* img {
+    width: 100vw;
+} */
+
 #img1 img {
     transform: rotate(20deg);
 }
