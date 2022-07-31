@@ -1,43 +1,23 @@
-import { useState } from "react";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [numsArr, setNumsArr] = useState([]);
-
-  const handleClick = () => {
-    const newArr = [];
-
-    while (newArr.length < 6) {
-      const randomNum = Math.floor(Math.random() * 49 + 1);
-
-      // if (!newArr.includes(randomNum)) {
-      //   newArr.push(randomNum);
-      // }
-
-      newArr.push(randomNum);
-      new Set([...newArr]);
-    }
-
-    const superNum = Math.floor(Math.random() * 10 + 1);
-    newArr.push(superNum);
-
-    setNumsArr(newArr);
-  };
-
   return (
     <div className="App">
-
-      {/* {console.log(numsArr)} */}
-
-      <div className="container">
-        {numsArr.map((item, i) => (
-          <div className="num" key={i}> {item} </div>
-        ))}
-      </div>
-
-      <div>
-        <button onClick={() => setNumsArr([])}> Reset </button>
-        <button onClick={handleClick}> get Lucky Nums </button>
-      </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
