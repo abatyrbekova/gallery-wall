@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* Shortcut shorthand */
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    width: 40rem;
+    height: 30rem;
+    border: 2px black solid;
+}
+.child {
+    width: 5rem;
+    height: 8rem;
+    color: white;
+    margin-left: 1rem;
+    border: 2px black solid;
+}
+.green {
+    background-color: lightgreen;
+    order: 1;
+    flex-grow: 8;
+}
+.red {
+    background-color: lightcoral;
+    order: 1;
+    flex-grow: 2;
+}
+.black {
+    background-color: black;
+    flex-grow: 1;
+}
+.box {
+    order: 2;
+}

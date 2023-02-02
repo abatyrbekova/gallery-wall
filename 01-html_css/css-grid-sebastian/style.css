@@ -1,0 +1,15 @@
+.gridContainer {
+    display: grid;
+    /* width: 500px; */
+    background-color: rgb(249, 249, 251);
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.gridItem {
+    background-color: rgb(228, 228, 228);
+    font-size: 20px;
+    /* width: 70px;
+    padding: 10px; */
+    border: solid 1.5px rgb(255, 255, 255);
+}
